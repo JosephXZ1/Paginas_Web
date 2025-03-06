@@ -6,7 +6,6 @@ html
     color: #333;
     background-color: #000000;
     margin: 0;
-
 }
 
 .Meta
@@ -17,9 +16,10 @@ html
     border: 0.1rem solid #2f3336;
     overflow: hidden;
     background-color: #000;
-    transition: all ease 0.3s;
+    transition: background-color ease 0.3s;
     cursor: pointer;
     margin:12vw auto;
+    text-decoration: none;
 }
 
 .Meta_content
@@ -34,16 +34,11 @@ html
     background-color: #1a1820;
 }
 
-.Meta_content a
-{
-    text-decoration: none;
-    color: #6b6b6b;
-}
-
 .Meta_content h1
 {
     color: #bfbfbf;
     font-weight: 100;
+    margin: 0;
 }
 
 .Meta_content h1, p
