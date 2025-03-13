@@ -3,5 +3,6 @@ Repositorios de la clase de páginas web I6B 2025
 
 La palabras al inicio significan:
 
-P: Práctica
+P: Práctica en clase
+T: Tarea
 E: Examen
