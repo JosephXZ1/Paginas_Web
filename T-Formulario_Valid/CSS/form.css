@@ -1,24 +1,24 @@
+/* - - - - - - - - - - CONTENEDOR GENERAL - - - - - - - - - - */
 .form
 {
-    background-color: rgba(0, 255, 255, 0.185);
     width: 80%;
     height: 67vh;
     margin: 6rem auto;
     display: flex;
 }
 
+/* - - - - - - - - - - CONTENEDOR IZQUIERDO - - - - - - - - - - */
+/* Contenedor general izquierdo*/
 .formIz
 {
     width: 37%;
     height: 100%;
     border-radius: 3rem 0 0 3rem;
     padding: 7% 1rem;
-
     background-image: url("../Multimedia/fondoBake.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
     position: relative;
 }
 
@@ -57,6 +57,7 @@
     text-shadow: 2px 2px 2px #000;
     margin-top: 1rem;
 }
+
 .formIz a
 {
     margin: auto;
@@ -84,15 +85,129 @@
     /*transform: scale(1.05);*/
 }
 
+/* - - - - - - - - - - CONTENEDOR DERECHO - - - - - - - - - - */
 
-
+/* Contenedor general derecho*/
 .formDer
 {
     width: 63%;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 3rem;
     border-radius: 0 3rem 3rem 0;
     background-color: #fff;
+    justify-content: center;
+    align-items: center;
+}
+
+.formDer h2
+{
+    font-family: "Prata", serif;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #ff8f34;
+    margin: 1rem 0;
+}
+/* Div de campos doble y derivados (inputs y labels) */
+.campos
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 1rem auto;
+}
+
+.campos label
+{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #ff8f34;
+    cursor: pointer;
+}
+
+.campos input
+{
+    width: 100%;
+    padding: 0.7rem;
+    margin-top: 0.7rem;
+    font-size: 1.2rem;
+    color: #ff8f34;
+    border: 0.2rem solid rgba(255, 143, 52, 0.5);
+    border-radius: 0.8rem;
+    outline: none;
+    transition: border 0.3s ease-in-out;
+}
+
+.campos input::placeholder
+{
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: rgba(255, 143, 52, 0.5);
+}
+
+.campos input:focus
+{
+    border-color: #ff8f34;
+}
+
+.campos div:first-child input
+{
+    border-radius: 1rem 0 0 1rem;
+    border-right: 1.6px solid #ff8f34;
+}
+
+.campos div:last-child input
+{
+    border-radius: 0 1rem 1rem 0;
+    border-left: 1.6px solid #ff8f34;
+}
+/* Area Checkbox */
+.check
+{
+    display: flex;
+    align-items: center;
+    margin: 2rem auto;
+    font-weight: 250;
+}
+
+.check input[type="checkbox"]
+{
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.check label
+{
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.check label a
+{
+    font-weight: 400;
+    color: #ff8f34;
+    text-decoration: none;
+}
+/* Boton de subir */
+.btnAccount
+{
+    display: block;
+    width: 13vw;
+    padding: 0.8rem;
+    margin: auto;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #ff8f34;
+    background-color: #fff;
+    border: 0.3rem solid #ff8f34;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.btnAccount:hover
+{
+    background-color: #ff8f34;
+    color: #fff;
+    border-color: #ca580c;
 }
